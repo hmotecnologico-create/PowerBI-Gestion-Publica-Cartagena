@@ -6,7 +6,10 @@ Datos de práctica del curso **Power BI aplicado a la gestión pública** (Plan 
 
 ## Cómo conectarse desde Power BI (ubicación web)
 
-En Power BI Desktop: **Inicio → Obtener datos → Web** → pegar la dirección de la columna "Dirección para Power BI" → Aceptar.
+1. **No haga clic en la dirección**: en el navegador, los archivos de Excel (.xlsx) se descargan en lugar de mostrarse. Es normal.
+2. Haga **clic derecho sobre la dirección → Copiar dirección del enlace**.
+3. En Power BI Desktop: **Inicio → Obtener datos → Web** → pegue la dirección → **Aceptar**.
+4. Si Power BI pregunta cómo conectarse, elija **Anónimo → Conectar**.
 
 | N.° | Tabla | Archivo | Dirección para Power BI (Obtener datos → Web) |
 |---|---|---|---|
