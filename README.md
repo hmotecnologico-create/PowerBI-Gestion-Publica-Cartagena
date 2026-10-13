@@ -44,6 +44,8 @@ Respaldo (solo si no logra copiarla desde Raw): las mismas direcciones.
 
 ## De dónde salen las tablas (fuente oficial)
 
+> **Nota de preparación (13-10-2026):** en `03_Ejecucion_Presupuestal_Gastos_ny6j-ysx3.csv` se reemplazaron por un espacio 6 saltos de línea que venían dentro de la columna `descripci_n_rubro` (texto de la descripción de rubros). Ningún valor cambió; así Power BI lee las 2.564 filas sin errores.
+
 | N.° | Publica | Página oficial | Corte | Descargado |
 |---|---|---|---|---|
 | 01 | Secretaría de Planeación Distrital | [cartagena.gov.co – Seguimiento planes de acción a 31-dic-2025](https://www.cartagena.gov.co/transparencia/4planeacion-presupuesto-informes/43-plan-accion/seguimiento-planes-acciones-institucionales-corte-31-diciembre-2025) | 31-dic-2025 | 05-10-2026 |
