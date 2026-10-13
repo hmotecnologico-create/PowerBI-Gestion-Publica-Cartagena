@@ -4,6 +4,10 @@ Datos de práctica del curso **Power BI aplicado a la gestión pública** (Plan 
 
 > Ejercicio académico con datos públicos (Ley 1712 de 2014). No es una evaluación oficial; las cifras oficiales del Plan de Desarrollo son las de la Secretaría de Planeación.
 
+## Tutorial
+
+- [Encuentro 2 · Tutorial del estudiante (PDF)](tutoriales/E2_Tutorial_Estudiante.pdf): conexión a las fuentes, Power Query, limpieza, transformación del PDD y relaciones (partes A a G).
+
 ## Cómo conectarse desde Power BI (ubicación web)
 
 1. Abra la carpeta [`fuentes`](fuentes) y haga clic en el nombre del archivo.
