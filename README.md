@@ -6,27 +6,29 @@ Datos de práctica del curso **Power BI aplicado a la gestión pública** (Plan 
 
 ## Cómo conectarse desde Power BI (ubicación web)
 
-1. **No haga clic en la dirección.** Un archivo de Excel (.xlsx) no es texto: el navegador no puede mostrarlo y lo descarga. Es normal y no es un problema del archivo ni del separador. (Los .csv sí se ven como texto en el navegador.)
-2. Copie la dirección **desde GitHub**: abra el archivo en la carpeta `fuentes`, haga **clic derecho sobre el botón Raw → Copiar dirección del enlace** (o clic derecho sobre la dirección de la tabla de abajo → Copiar dirección del enlace).
+1. Abra la carpeta [`fuentes`](fuentes) y haga clic en el nombre del archivo.
+2. En la página del archivo, haga **clic derecho sobre el botón Raw → Copiar dirección del enlace**. (No haga clic normal: un .xlsx no es texto y el navegador lo descarga; es normal.)
 3. En Power BI Desktop use el conector **del tipo de archivo** y pegue la dirección en **Ruta de acceso al archivo** (no pulse Examinar):
    - Archivos **.xlsx** (01, 02 y 05): **Inicio → Libro de Excel**.
    - Archivos **.csv** (03 y 04): **Inicio → Obtener datos → Texto o CSV**.
 4. En **Credenciales de origen de datos** deje **Anónima** → **Siguiente**.
 5. En **Elegir datos** marque la hoja (en los Excel) → **Load**.
 
+La dirección copiada tiene `/raw/` en la mitad: `https://github.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/raw/refs/heads/main/fuentes/ARCHIVO`.
+
+> **Si sale "Los datos descargados son HTML, que no es el tipo esperado"**: se copió la dirección de la página del archivo (la que tiene `/blob/`). Vuelva a la página del archivo y copie con **clic derecho en Raw → Copiar dirección del enlace**.
+
 > **No use Obtener datos → Web**: en Power BI Desktop actual abre el conector "Página web", que sirve para páginas HTML y da el error "No se ha podido recuperar el contenido de la página web".
 
-> **Si sale "Los datos descargados son HTML, que no es el tipo esperado"**: se pegó la dirección de la página de GitHub (`https://github.com/...`). La dirección para Power BI debe empezar con `https://raw.githubusercontent.com/` y no llevar `/blob`.
+Respaldo (solo si no logra copiarla desde Raw): las mismas direcciones.
 
-**Cómo armar la dirección raw de cualquier archivo de GitHub:** abra el archivo en GitHub, copie la dirección del navegador (`https://github.com/USUARIO/REPOSITORIO/blob/main/CARPETA/ARCHIVO`), cambie `github.com` por `raw.githubusercontent.com` y borre `/blob`.
-
-| N.° | Tabla | Archivo | Dirección raw (pegar en Ruta de acceso al archivo) |
-|---|---|---|---|
-| 01 | Matriz de seguimiento del PDD | `01_PDD_Matriz_Seguimiento_dic2025.xlsx` | https://raw.githubusercontent.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/main/fuentes/01_PDD_Matriz_Seguimiento_dic2025.xlsx |
-| 02 | F11 – Programas y proyectos de inversión | `02_F11_Programas_Proyectos_dic2025.xlsx` | https://raw.githubusercontent.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/main/fuentes/02_F11_Programas_Proyectos_dic2025.xlsx |
-| 03 | Ejecución presupuestal de gastos | `03_Ejecucion_Presupuestal_Gastos_ny6j-ysx3.csv` | https://raw.githubusercontent.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/main/fuentes/03_Ejecucion_Presupuestal_Gastos_ny6j-ysx3.csv |
-| 04 | SECOP II – BPIN por proceso | `04_SECOPII_BPIN_por_Proceso_Cartagena_2024-2025_d9na-abhe.csv` | https://raw.githubusercontent.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/main/fuentes/04_SECOPII_BPIN_por_Proceso_Cartagena_2024-2025_d9na-abhe.csv |
-| 05 | SECOP II – Contratos electrónicos 2025 | `05_SECOPII_Contratos_Alcaldia_2025_jbjy-vk9h.xlsx` | https://raw.githubusercontent.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/main/fuentes/05_SECOPII_Contratos_Alcaldia_2025_jbjy-vk9h.xlsx |
+| N.° | Tabla | Archivo | Conector | Dirección (pegar en Ruta de acceso al archivo) |
+|---|---|---|---|---|
+| 01 | Matriz de seguimiento del PDD | [01_PDD_Matriz_Seguimiento_dic2025.xlsx](fuentes/01_PDD_Matriz_Seguimiento_dic2025.xlsx) | Libro de Excel · hoja “Seguridad Humana” | https://github.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/raw/refs/heads/main/fuentes/01_PDD_Matriz_Seguimiento_dic2025.xlsx |
+| 02 | F11 – Programas y proyectos de inversión | [02_F11_Programas_Proyectos_dic2025.xlsx](fuentes/02_F11_Programas_Proyectos_dic2025.xlsx) | Libro de Excel · hoja “Hoja1” | https://github.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/raw/refs/heads/main/fuentes/02_F11_Programas_Proyectos_dic2025.xlsx |
+| 03 | Ejecución presupuestal de gastos | [03_Ejecucion_Presupuestal_Gastos_ny6j-ysx3.csv](fuentes/03_Ejecucion_Presupuestal_Gastos_ny6j-ysx3.csv) | Texto o CSV | https://github.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/raw/refs/heads/main/fuentes/03_Ejecucion_Presupuestal_Gastos_ny6j-ysx3.csv |
+| 04 | SECOP II – BPIN por proceso | [04_SECOPII_BPIN_por_Proceso_Cartagena_2024-2025_d9na-abhe.csv](fuentes/04_SECOPII_BPIN_por_Proceso_Cartagena_2024-2025_d9na-abhe.csv) | Texto o CSV | https://github.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/raw/refs/heads/main/fuentes/04_SECOPII_BPIN_por_Proceso_Cartagena_2024-2025_d9na-abhe.csv |
+| 05 | SECOP II – Contratos electrónicos 2025 | [05_SECOPII_Contratos_Alcaldia_2025_jbjy-vk9h.xlsx](fuentes/05_SECOPII_Contratos_Alcaldia_2025_jbjy-vk9h.xlsx) | Libro de Excel · hoja “Contratos” | https://github.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/raw/refs/heads/main/fuentes/05_SECOPII_Contratos_Alcaldia_2025_jbjy-vk9h.xlsx |
 
 ## De dónde salen las tablas (fuente oficial)
 
