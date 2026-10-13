@@ -16,6 +16,8 @@ Datos de práctica del curso **Power BI aplicado a la gestión pública** (Plan 
 
 > **No use Obtener datos → Web**: en Power BI Desktop actual abre el conector "Página web", que sirve para páginas HTML y da el error "No se ha podido recuperar el contenido de la página web".
 
+> **Si sale "Los datos descargados son HTML, que no es el tipo esperado"**: se pegó la dirección de la página de GitHub (`https://github.com/...`). La dirección para Power BI debe empezar con `https://raw.githubusercontent.com/` y no llevar `/blob`.
+
 **Cómo armar la dirección raw de cualquier archivo de GitHub:** abra el archivo en GitHub, copie la dirección del navegador (`https://github.com/USUARIO/REPOSITORIO/blob/main/CARPETA/ARCHIVO`), cambie `github.com` por `raw.githubusercontent.com` y borre `/blob`.
 
 | N.° | Tabla | Archivo | Dirección raw (pegar en Ruta de acceso al archivo) |
