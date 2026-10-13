@@ -6,12 +6,19 @@ Datos de práctica del curso **Power BI aplicado a la gestión pública** (Plan 
 
 ## Cómo conectarse desde Power BI (ubicación web)
 
-1. **No haga clic en la dirección**: en el navegador, los archivos de Excel (.xlsx) se descargan en lugar de mostrarse. Es normal.
+1. **No haga clic en la dirección.** Un archivo de Excel (.xlsx) no es texto: el navegador no puede mostrarlo y lo descarga. Es normal y no es un problema del archivo ni del separador. (Los .csv sí se ven como texto en el navegador.)
 2. Haga **clic derecho sobre la dirección → Copiar dirección del enlace**.
-3. En Power BI Desktop: **Inicio → Obtener datos → Web** → pegue la dirección → **Aceptar**.
-4. Si Power BI pregunta cómo conectarse, elija **Anónimo → Conectar**.
+3. En Power BI Desktop use el conector **del tipo de archivo** y pegue la dirección en **Ruta de acceso al archivo** (no pulse Examinar):
+   - Archivos **.xlsx** (01, 02 y 05): **Inicio → Libro de Excel**.
+   - Archivos **.csv** (03 y 04): **Inicio → Obtener datos → Texto o CSV**.
+4. En **Credenciales de origen de datos** deje **Anónima** → **Siguiente**.
+5. En **Elegir datos** marque la hoja (en los Excel) → **Load**.
 
-| N.° | Tabla | Archivo | Dirección para Power BI (Obtener datos → Web) |
+> **No use Obtener datos → Web**: en Power BI Desktop actual abre el conector "Página web", que sirve para páginas HTML y da el error "No se ha podido recuperar el contenido de la página web".
+
+**Cómo armar la dirección raw de cualquier archivo de GitHub:** abra el archivo en GitHub, copie la dirección del navegador (`https://github.com/USUARIO/REPOSITORIO/blob/main/CARPETA/ARCHIVO`), cambie `github.com` por `raw.githubusercontent.com` y borre `/blob`.
+
+| N.° | Tabla | Archivo | Dirección raw (pegar en Ruta de acceso al archivo) |
 |---|---|---|---|
 | 01 | Matriz de seguimiento del PDD | `01_PDD_Matriz_Seguimiento_dic2025.xlsx` | https://raw.githubusercontent.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/main/fuentes/01_PDD_Matriz_Seguimiento_dic2025.xlsx |
 | 02 | F11 – Programas y proyectos de inversión | `02_F11_Programas_Proyectos_dic2025.xlsx` | https://raw.githubusercontent.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/main/fuentes/02_F11_Programas_Proyectos_dic2025.xlsx |
