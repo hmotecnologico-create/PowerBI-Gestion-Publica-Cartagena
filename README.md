@@ -10,6 +10,7 @@ Datos de práctica del curso **Power BI aplicado a la gestión pública** (Plan 
 
 ## Cómo conectarse desde Power BI (ubicación web)
 
+0. Antes de cargar la primera fuente (una vez por archivo): **Archivo → Opciones y configuración → Opciones → Archivo actual → Carga de datos** → en Relaciones desmarque **Detectar automáticamente nuevas relaciones después de cargar los datos** → Aceptar. (Evita esperas en "Detectando relaciones…"; las relaciones se crean a mano en la Parte F.)
 1. Abra la carpeta [`fuentes`](fuentes) y haga clic en el nombre del archivo.
 2. En la página del archivo, haga **clic derecho sobre el botón Raw → Copiar dirección del enlace**. (No haga clic normal: un .xlsx no es texto y el navegador lo descarga; es normal.)
 3. En Power BI Desktop use el conector **del tipo de archivo** y pegue la dirección en **Ruta de acceso al archivo** (no pulse Examinar):
@@ -17,6 +18,7 @@ Datos de práctica del curso **Power BI aplicado a la gestión pública** (Plan 
    - Archivos **.csv** (03 y 04): **Inicio → Obtener datos → Texto o CSV**.
 4. En **Credenciales de origen de datos** deje **Anónima** → **Siguiente**.
 5. En **Elegir datos** marque la hoja (en los Excel) → **Load**.
+6. En el panel **Datos**: clic derecho sobre la consulta nueva → **Cambiar nombre** → escriba el nombre de la tabla de abajo, igual (sin tildes ni espacios).
 
 La dirección copiada tiene `/raw/` en la mitad: `https://github.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/raw/refs/heads/main/fuentes/ARCHIVO`.
 
@@ -26,13 +28,13 @@ La dirección copiada tiene `/raw/` en la mitad: `https://github.com/hmotecnolog
 
 Respaldo (solo si no logra copiarla desde Raw): las mismas direcciones.
 
-| N.° | Tabla | Archivo | Conector | Dirección (pegar en Ruta de acceso al archivo) |
-|---|---|---|---|---|
-| 01 | Matriz de seguimiento del PDD | [01_PDD_Matriz_Seguimiento_dic2025.xlsx](fuentes/01_PDD_Matriz_Seguimiento_dic2025.xlsx) | Libro de Excel · hoja “Seguridad Humana” | https://github.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/raw/refs/heads/main/fuentes/01_PDD_Matriz_Seguimiento_dic2025.xlsx |
-| 02 | F11 – Programas y proyectos de inversión | [02_F11_Programas_Proyectos_dic2025.xlsx](fuentes/02_F11_Programas_Proyectos_dic2025.xlsx) | Libro de Excel · hoja “Hoja1” | https://github.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/raw/refs/heads/main/fuentes/02_F11_Programas_Proyectos_dic2025.xlsx |
-| 03 | Ejecución presupuestal de gastos | [03_Ejecucion_Presupuestal_Gastos_ny6j-ysx3.csv](fuentes/03_Ejecucion_Presupuestal_Gastos_ny6j-ysx3.csv) | Texto o CSV | https://github.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/raw/refs/heads/main/fuentes/03_Ejecucion_Presupuestal_Gastos_ny6j-ysx3.csv |
-| 04 | SECOP II – BPIN por proceso | [04_SECOPII_BPIN_por_Proceso_Cartagena_2024-2025_d9na-abhe.csv](fuentes/04_SECOPII_BPIN_por_Proceso_Cartagena_2024-2025_d9na-abhe.csv) | Texto o CSV | https://github.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/raw/refs/heads/main/fuentes/04_SECOPII_BPIN_por_Proceso_Cartagena_2024-2025_d9na-abhe.csv |
-| 05 | SECOP II – Contratos electrónicos 2025 | [05_SECOPII_Contratos_Alcaldia_2025_jbjy-vk9h.xlsx](fuentes/05_SECOPII_Contratos_Alcaldia_2025_jbjy-vk9h.xlsx) | Libro de Excel · hoja “Contratos” | https://github.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/raw/refs/heads/main/fuentes/05_SECOPII_Contratos_Alcaldia_2025_jbjy-vk9h.xlsx |
+| N.° | Tabla | Archivo | Conector | Nombre de la consulta | Dirección (pegar en Ruta de acceso al archivo) |
+|---|---|---|---|---|---|
+| 01 | Matriz de seguimiento del PDD | [01_PDD_Matriz_Seguimiento_dic2025.xlsx](fuentes/01_PDD_Matriz_Seguimiento_dic2025.xlsx) | Libro de Excel · hoja “Seguridad Humana” | **PDD_SeguridadHumana** | https://github.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/raw/refs/heads/main/fuentes/01_PDD_Matriz_Seguimiento_dic2025.xlsx |
+| 02 | F11 – Programas y proyectos de inversión | [02_F11_Programas_Proyectos_dic2025.xlsx](fuentes/02_F11_Programas_Proyectos_dic2025.xlsx) | Libro de Excel · hoja “Hoja1” | **F11** | https://github.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/raw/refs/heads/main/fuentes/02_F11_Programas_Proyectos_dic2025.xlsx |
+| 03 | Ejecución presupuestal de gastos | [03_Ejecucion_Presupuestal_Gastos_ny6j-ysx3.csv](fuentes/03_Ejecucion_Presupuestal_Gastos_ny6j-ysx3.csv) | Texto o CSV | **Ejecucion** | https://github.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/raw/refs/heads/main/fuentes/03_Ejecucion_Presupuestal_Gastos_ny6j-ysx3.csv |
+| 04 | SECOP II – BPIN por proceso | [04_SECOPII_BPIN_por_Proceso_Cartagena_2024-2025_d9na-abhe.csv](fuentes/04_SECOPII_BPIN_por_Proceso_Cartagena_2024-2025_d9na-abhe.csv) | Texto o CSV | **BPIN_Proceso** | https://github.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/raw/refs/heads/main/fuentes/04_SECOPII_BPIN_por_Proceso_Cartagena_2024-2025_d9na-abhe.csv |
+| 05 | SECOP II – Contratos electrónicos 2025 | [05_SECOPII_Contratos_Alcaldia_2025_jbjy-vk9h.xlsx](fuentes/05_SECOPII_Contratos_Alcaldia_2025_jbjy-vk9h.xlsx) | Libro de Excel · hoja “Contratos” | **Contratos** | https://github.com/hmotecnologico-create/PowerBI-Gestion-Publica-Cartagena/raw/refs/heads/main/fuentes/05_SECOPII_Contratos_Alcaldia_2025_jbjy-vk9h.xlsx |
 
 ## De dónde salen las tablas (fuente oficial)
 
