@@ -7,7 +7,7 @@ Datos de práctica del curso **Power BI aplicado a la gestión pública** (Plan 
 ## Cómo conectarse desde Power BI (ubicación web)
 
 1. **No haga clic en la dirección.** Un archivo de Excel (.xlsx) no es texto: el navegador no puede mostrarlo y lo descarga. Es normal y no es un problema del archivo ni del separador. (Los .csv sí se ven como texto en el navegador.)
-2. Haga **clic derecho sobre la dirección → Copiar dirección del enlace**.
+2. Copie la dirección **desde GitHub**: abra el archivo en la carpeta `fuentes`, haga **clic derecho sobre el botón Raw → Copiar dirección del enlace** (o clic derecho sobre la dirección de la tabla de abajo → Copiar dirección del enlace).
 3. En Power BI Desktop use el conector **del tipo de archivo** y pegue la dirección en **Ruta de acceso al archivo** (no pulse Examinar):
    - Archivos **.xlsx** (01, 02 y 05): **Inicio → Libro de Excel**.
    - Archivos **.csv** (03 y 04): **Inicio → Obtener datos → Texto o CSV**.
