@@ -9,6 +9,11 @@ Datos de práctica del curso **Power BI aplicado a la gestión pública** (Plan 
 - [Encuentro 1 · Tutorial del estudiante (PDF)](tutoriales/E1_Tutorial_Estudiante.pdf): inteligencia de negocios, Power BI, la ventana y sus vistas, tipos de datos y primeras visualizaciones. *Nota:* allí las fuentes se cargan desde una carpeta del computador (`Fuentes_E1`); desde el Encuentro 2 se cargan **por la web** desde este repositorio (Parte A del tutorial del Encuentro 2).
 - [Encuentro 2 · Tutorial del estudiante (PDF)](tutoriales/E2_Tutorial_Estudiante.pdf): el problema a resolver, conexión a las fuentes, Power Query, limpieza, transformación del PDD y relaciones (partes A a G).
 
+## Diapositivas
+
+- [Encuentro 1 (PDF)](diapositivas/E1_Diapositivas_PowerBI_Gestion_Publica.pdf)
+- [Encuentro 2 (PDF)](diapositivas/E2_Diapositivas_PowerBI_Gestion_Publica.pdf)
+
 ## Cómo conectarse desde Power BI (ubicación web)
 
 0. Antes de cargar la primera fuente (una vez por archivo): **Archivo → Opciones y configuración → Opciones → Archivo actual → Carga de datos** → en Relaciones desmarque **Detectar automáticamente nuevas relaciones después de cargar los datos** → Aceptar. (Evita esperas en "Detectando relaciones…"; las relaciones se crean a mano en la Parte F.)
