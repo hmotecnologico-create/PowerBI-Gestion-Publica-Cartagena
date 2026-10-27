@@ -8,15 +8,31 @@ Datos de práctica del curso **Power BI aplicado a la gestión pública** (Plan 
 
 - [Encuentro 1 · Tutorial del estudiante (PDF)](tutoriales/E1_Tutorial_Estudiante.pdf): inteligencia de negocios, Power BI, la ventana y sus vistas, tipos de datos y primeras visualizaciones. *Nota:* allí las fuentes se cargan desde una carpeta del computador (`Fuentes_E1`); desde el Encuentro 2 se cargan **por la web** desde este repositorio (Parte A del tutorial del Encuentro 2).
 - [Encuentro 2 · Tutorial del estudiante (PDF)](tutoriales/E2_Tutorial_Estudiante.pdf): el problema a resolver, conexión a las fuentes, Power Query, limpieza, transformación del PDD y relaciones (partes A a G).
+- [Encuentro 3 · Tutorial del estudiante (PDF)](tutoriales/E3_Tutorial_Estudiante.pdf): limpieza de las 5 tablas (una ficha por tabla), relaciones, medidas DAX, visuales, semáforo y la página 1 del tablero (partes A a L).
 
 ## Diapositivas
 
 - [Encuentro 1 (PDF)](diapositivas/E1_Diapositivas_PowerBI_Gestion_Publica.pdf)
 - [Encuentro 2 (PDF)](diapositivas/E2_Diapositivas_PowerBI_Gestion_Publica.pdf)
+- [Encuentro 3 (PDF)](diapositivas/E3_Diapositivas_PowerBI_Gestion_Publica.pdf)
+
+## Archivos de Power BI (Encuentro 3)
+
+Puntos de control para retomar la práctica si se atrasa. Cada archivo trae los datos ya cargados y funciona por separado (descárguelo con el botón de descarga de la página del archivo).
+
+| Archivo | Hasta dónde llega (tutorial del Encuentro 3) |
+|---|---|
+| [E2_P1_Fuentes_Cargadas.pbix](powerbi/E2_P1_Fuentes_Cargadas.pbix) | Punto de partida: las 5 tablas cargadas, sin limpiar |
+| [E2_P2_Datos_Limpios.pbix](powerbi/E2_P2_Datos_Limpios.pbix) | Fin de la Parte E: las 5 tablas limpias (Fichas 1 a 5), sin relaciones |
+| [E2_P3_Modelo.pbix](powerbi/E2_P3_Modelo.pbix) | Fin de la Parte F: tablas limpias y 3 relaciones |
+| [E3_P4_Medidas.pbix](powerbi/E3_P4_Medidas.pbix) | Fin de la Parte H: las 10 medidas DAX base |
+| [E3_P5_Tablero.pbix](powerbi/E3_P5_Tablero.pbix) | Tablero terminado: página 1 (Seguimiento 2025) y página 2 (Ruta del recurso) |
+
+Fondo institucional para el tablero (Parte K): [fondo_PIC_1280x720.png](powerbi/fondo_PIC_1280x720.png).
 
 ## Cómo conectarse desde Power BI (ubicación web)
 
-0. Antes de cargar la primera fuente (una vez por archivo): **Archivo → Opciones y configuración → Opciones → Archivo actual → Carga de datos** → en Relaciones desmarque **Detectar automáticamente nuevas relaciones después de cargar los datos** → Aceptar. (Evita esperas en "Detectando relaciones…"; las relaciones se crean a mano en la Parte F.)
+0. Antes de cargar la primera fuente (una vez por archivo): **Archivo → Opciones y configuración → Opciones → Archivo actual → Carga de datos** → en Relaciones desmarque **Detectar automáticamente nuevas relaciones cuando se carguen los datos** → Aceptar. (Evita esperas en "Detectando relaciones…"; las relaciones se crean a mano en la Parte F.)
 1. Abra la carpeta [`fuentes`](fuentes) y haga clic en el nombre del archivo.
 2. En la página del archivo, haga **clic derecho sobre el botón Raw → Copiar dirección del enlace**. (No haga clic normal: un .xlsx no es texto y el navegador lo descarga; es normal.)
 3. En Power BI Desktop use el conector **del tipo de archivo** y pegue la dirección en **Ruta de acceso al archivo** (no pulse Examinar):
