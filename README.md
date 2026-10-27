@@ -18,17 +18,8 @@ Datos de práctica del curso **Power BI aplicado a la gestión pública** (Plan 
 
 ## Archivos de Power BI (Encuentro 3)
 
-Puntos de control para retomar la práctica si se atrasa. Cada archivo trae los datos ya cargados y funciona por separado (descárguelo con el botón de descarga de la página del archivo).
-
-| Archivo | Hasta dónde llega (tutorial del Encuentro 3) |
-|---|---|
-| [E2_P1_Fuentes_Cargadas.pbix](powerbi/E2_P1_Fuentes_Cargadas.pbix) | Punto de partida: las 5 tablas cargadas, sin limpiar |
-| [E2_P2_Datos_Limpios.pbix](powerbi/E2_P2_Datos_Limpios.pbix) | Fin de la Parte E: las 5 tablas limpias (Fichas 1 a 5), sin relaciones |
-| [E2_P3_Modelo.pbix](powerbi/E2_P3_Modelo.pbix) | Fin de la Parte F: tablas limpias y 3 relaciones |
-| [E3_P4_Medidas.pbix](powerbi/E3_P4_Medidas.pbix) | Fin de la Parte H: las 10 medidas DAX base |
-| [E3_P5_Tablero.pbix](powerbi/E3_P5_Tablero.pbix) | Tablero terminado: página 1 (Seguimiento 2025) y página 2 (Ruta del recurso) |
-
-Fondo institucional para el tablero (Parte K): [fondo_PIC_1280x720.png](powerbi/fondo_PIC_1280x720.png).
+- [E2_P1_Fuentes_Cargadas.pbix](powerbi/E2_P1_Fuentes_Cargadas.pbix): punto de partida del Encuentro 3, con las 5 tablas ya cargadas (sin limpiar). Descárguelo con el botón de descarga de la página del archivo.
+- [fondo_PIC_1280x720.png](powerbi/fondo_PIC_1280x720.png): fondo institucional para el tablero (Parte K del tutorial).
 
 ## Cómo conectarse desde Power BI (ubicación web)
 
